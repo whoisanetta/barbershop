@@ -1,0 +1,296 @@
+:root {
+    --main-title-color: #fff
+    --second-title-color: #303030
+    --main-btn-color: #fff
+    --second-btn-color: #303030
+    --typical-lh: 1.36
+    --accent-color: #FF6C00;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.btn {
+      font-family: "inherit";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 1.36;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+width: 0px;
+height: 0px;
+left: 0px;
+top: 0px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 0;
+font-size: 0px;
+line-height: 0px;
+letter-spacing: 0.00em;
+
+color: #303030;
+
+}
+/*----header----*/
+
+.header {
+  background-color: gray;
+}
+
+.header-navigation {
+}
+
+.header-logo {
+}
+
+.header-list {
+}
+
+.header-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #ff6c00;
+}
+
+.header-item {
+}
+
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-btn {
+  cursor: pointer;
+}
+
+/*----hero----*/
+
+.hero {
+  background-color: #747781;
+}
+
+.hero-list {
+}
+
+.hero-item {
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.hover-link:is(:hover:focus) {
+  color: #ff6c00;
+}
+
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  color: var(--main-title-color, #fff);
+}
+
+.hero-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/*----about----*/
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-pre-title {
+  color: #303030;
+}
+.about-title {
+  color: var(--second-title-color, #303030);
+}
+.about-after-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about-btn {
+  cursor: pointer;
+}
+
+.prices {
+  background-color: #1b1818;
+}
+.prices-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.prices-list {
+}
+.prices-item {
+}
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-btn {
+
+  cursor: pointer;
+}
+
+/*--benefits--*/
+.benefits {
+}
+.benefits-list {
+}
+
+.benefits-item {
+    font-weight: 700;
+font-size: 42px;
+line-height: calc(57/42);
+text-align: center;
+letter-spacing: 0.05em;
+color: #303030;
+   
+}
+.benefits-item-text {
+    font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+text-align: center;
+
+color: var(--typichal-lh);
+
+}
+.benefits-pre-title {
+    color: #303030;
+
+}
+.benefits-title {
+    color: #303030;
+
+}
+.benefits-after-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.barbers {
+}
+.barbers-pre-title {
+    color: #303030;
+}
+.barbers-title {
+    color: var(--second-title-color);
+}
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-item-title {
+    font-weight: 400;
+font-size: 18px;
+line-height: calc(25/18);
+text-align: center;
+letter-spacing: 0.02em;
+
+}
+.barbers-item-text {
+    font-weight: 400;
+font-size: 14px;
+line-height: calc(19/14);
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FF6C00;
+
+}
+
+/*----gallerey----*/
+.gallery {
+}
+.gallery-pre-title {
+    color: #303030;
+
+}
+.gallery-title {
+
+}
+.gallery-list {
+
+}
