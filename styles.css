@@ -90,14 +90,22 @@ body {
   background-color: gray;
   padding-top: 32px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .header-logo {
 }
 
 .header-list {
+  display: flex;
 }
 
 .header-link {
@@ -114,6 +122,7 @@ body {
 }
 
 .header-item {
+  display: flex;
 }
 
 .header-tel {
@@ -136,6 +145,7 @@ body {
 }
 
 .hero-list {
+  display: flex;
 }
 
 .hero-item {
