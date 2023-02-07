@@ -56,12 +56,16 @@ body {
 }
 
 .btn {
+  width: 160px;
+  height: 40px;
   font-family: "inherit";
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
   cursor: pointer;
 }
 
@@ -102,10 +106,12 @@ body {
 }
 
 .header-logo {
+  margin-right: 130px;
 }
 
 .header-list {
   display: flex;
+  gap: 30px;
 }
 
 .header-link {
@@ -132,6 +138,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-right: 30px;
 }
 
 .header-btn {
@@ -141,14 +148,22 @@ body {
 /*----hero----*/
 
 .hero {
-  background-color: #747781;
 }
 
-.hero-list {
+.hero-container {
   display: flex;
 }
 
+.hero-list {
+  width: 100px;
+}
+
 .hero-item {
+}
+.hero-wrap {
+  background-color: #747781;
+  flex-grow: 1;
+  padding: 272px 100px 208px;
 }
 
 .hero-link {
@@ -182,6 +197,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  max-width: 360px;
 }
 
 /*----about----*/
@@ -190,9 +206,20 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.about-container {
+  display: flex;
+  gap: 30px;
+}
 .about-list {
+  display: flex;
+  gap: 30px;
 }
 .about-item {
+}
+
+.about-wrap {
+  min-width: 470px;
 }
 .about-pre-title {
   margin-bottom: 20px;
@@ -221,6 +248,8 @@ body {
   color: var(--second-btn-color);
 }
 
+/*--------prices--------*/
+
 .prices {
   background-color: #1b1818;
   padding-top: 120px;
@@ -234,12 +263,26 @@ body {
   color: var(--main-title-color);
   margin-bottom: 44px;
 }
+
+.prices-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
 .prices-list {
   border: 1px solid #fff;
   padding: 30px 20px;
+  width: calc((100% - 30px) / 2);
 }
 .prices-item {
+  display: flex;
+  justify-content: space-between;
 }
+
+.prices-item + .prices-item {
+  margin-top: 20px;
+}
+
 .prices-item-text {
   font-size: 18px;
   line-height: 1.67;
@@ -248,6 +291,8 @@ body {
 }
 .prices-btn {
   color: #fff;
+  display: block;
+  margin: 0 auto;
 }
 
 /*--benefits--*/
@@ -312,8 +357,15 @@ body {
   margin-bottom: 44px;
 }
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
 .barbers-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.barber-items-wrap {
+  padding-top: 30px;
 }
 .barbers-item-title {
   font-weight: 400;
@@ -322,6 +374,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 .barbers-item-text {
   font-size: 14px;
@@ -334,11 +387,20 @@ body {
 
 /*----gallerey----*/
 .gallery {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .gallery-pre-title {
+  margin-bottom: 44px;
   color: #303030;
 }
 .gallery-title {
 }
 .gallery-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.gallery-item {
+  width: calc((100% - 90px) / 4);
 }
