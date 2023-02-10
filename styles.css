@@ -5,6 +5,7 @@
   --second-btn-color: #303030;
   --typical-lh: 1.36;
   --accent-color: #ff6c00;
+  --l-gra: rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2);
 }
 
 p,
@@ -162,6 +163,14 @@ body {
 }
 .hero-wrap {
   background-color: #747781;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../barbershop/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   flex-grow: 1;
   padding: 272px 100px 208px;
 }
@@ -381,10 +390,36 @@ body {
   line-height: calc(19 / 14);
   text-align: center;
   letter-spacing: 0.02em;
-
   color: var(--accent-color);
+  margin-bottom: 30px;
+}
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
+.barbers-soc-item {
+  width: 44px;
+  height: 44px;
+}
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+}
+
+.barbers-soc-icon {
+  fill: #000;
+}
+
+.barbers-soc-link:is(:hover, :focus) {
+  background-color: aqua;
+}
 /*----gallerey----*/
 .gallery {
   padding-top: 120px;
