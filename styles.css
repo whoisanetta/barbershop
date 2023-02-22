@@ -38,7 +38,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .link {
@@ -102,8 +102,10 @@ body {
 /*----header----*/
 
 .header {
-  background-color: gray;
+  position: absolute;
+  width: 100%;
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-container {
   display: flex;
@@ -131,6 +133,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: #ffffff;
+  transition: color 300ms linear;
 }
 
 .header-link:hover,
