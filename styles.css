@@ -68,6 +68,12 @@ body {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   cursor: pointer;
+  transition: color 300ms linear, background-color 300ms linear;
+}
+
+.btn:is(:hover, :focus) {
+  background-color: var(--accent-color);
+  color: var(--main-btn-color);
 }
 
 .pre-title {
@@ -168,10 +174,28 @@ body {
   display: flex;
 }
 
-.hero-list {
+.hero-soc {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 27px;
+  padding-bottom: 40px;
 }
 
+.hero-list {
+  display: flex;
+  transform: rotate(-90deg) translatey(100%);
+  transform-origin: bottom left;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
 .hero-item {
 }
 .hero-wrap {
